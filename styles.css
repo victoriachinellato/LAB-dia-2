@@ -4,9 +4,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
-
 .grid-container {
     display: grid;
     grid-template-areas:
@@ -44,13 +43,13 @@
     list-style: none;
     color: white;
     margin-top: 20px;
+    font-weight: 600;
     
 }
 
 .navBar a {
     color: white;
     text-decoration: none;
-    
 
 }
 
@@ -67,10 +66,21 @@
     justify-content: space-between;
 }
 
-.botonesNav{
+.botonNavR{
     border-radius: 20px;
     border: none;
     padding: 10px;
+    background-color: lightseagreen;
+    color: white;
+    font-weight: 600;
+    width: 150px;
+}
+
+.botonNavIs{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
 }
 
 .buscarBar {
@@ -83,7 +93,7 @@
 /* USER INFO  */
 
 .userInfo {
-    width: 290px;
+    width: 330px;
     min-width: 250px ;
     grid-area: user;
     display:flex;
@@ -92,7 +102,7 @@
     border-radius: 5px;
     border: solid lightgray 2px;
     margin-left: 60px;
-    padding: 30px;
+    padding: 40px;
     margin-top: -80px;
     background-color: white;  
 }
@@ -115,7 +125,8 @@
 .userInfo h1 {
     margin-top: 15px;
     text-align: center;
-    padding: 10px;
+    font-size: 30PX;
+    
 
 }
 
