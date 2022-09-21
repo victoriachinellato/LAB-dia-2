@@ -1,0 +1,166 @@
+
+/* GRILLA */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "user menu menu"
+    "user menu menu"
+    ;
+}
+
+
+/* HEADER */
+
+.header {
+    width: 100vw;
+    height: 200px;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/fa6047ccfae4e7df156982fbd57dcb9c/439457b7-7b60-4f5b-8fc9-60f9a6ed45a4_rwc_-2x660x3437x367x3437.jpg?h=16a7c20d54787d09fc2bd42ef973f91a");
+    background-size: cover;
+    right: 0;
+    top: 0;
+    /* grid area */
+    grid-area: header;
+}
+
+
+.navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navBar ul {
+    display: flex;   
+    list-style: none;
+    color: white;
+    margin-top: 20px;
+    
+}
+
+.navBar a {
+    color: white;
+    text-decoration: none;
+    
+
+}
+
+.navBar li {
+    padding-right: 30px;
+    padding-left: 30px;
+    
+}
+
+.navBar form {
+   padding: 15px;
+   width: 500px;
+   display: flex;
+    justify-content: space-between;
+}
+
+.botonesNav{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.buscarBar {
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    
+}
+/* USER INFO  */
+
+.userInfo {
+    width: 290px;
+    min-width: 250px ;
+    grid-area: user;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: solid lightgray 2px;
+    margin-left: 60px;
+    padding: 30px;
+    margin-top: -80px;
+    background-color: white;  
+}
+
+.botonesUser {
+    margin: 10px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+.imgLogo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.userInfo h1 {
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.userInfo h5, p {
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    color: #696969;
+}
+
+
+/* GRILLA DE FOTOS */
+
+.grid-container-fotos {
+    grid-area: menu;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+    justify-self:  center;
+    margin-top: 50px;
+    margin-left: 36px;
+    margin-right: 63px;
+    
+}
+
+.imagenesGrilla {
+    width: 500px;
+   
+}
+
+@media only screen and (max-width: 900px) {
+    .grid-container-fotos {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .grid-container {
+        grid-template-areas: 
+        "header"
+        "user"
+        "menu";
+    }
+}
+
+
+
+
